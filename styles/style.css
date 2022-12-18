@@ -655,7 +655,7 @@ margin: auto;
         float: inherit;
         margin-left: 4%;
     }
-    #music #izquierda {padding-left: 18%;}
+    #music #izquierda {padding-left: 17%;}
     #music #derecha {padding: 0% 5% 10% 0%;}
-    footer .fa {margin: 5px 1px;}
+    footer .fa {margin: 5px 0px;}
 }
