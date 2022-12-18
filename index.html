@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--ESTA ES LA PÁGINA WEB PARA EL PROYECTO DE FINAL DE PRIMER TRIMESTRE EN LA ASIGNATURA-->
+    <!--DE LENGUAJES DE MARCAS Y SISTEMAS DE GESTIÓN DE LA INFORMACIÓN, EN 1º DAW DEL CPIFP -->
+    <!--NUEVO (DESGLOSE IES CAMPANILLAS). TODAS LAS IMÁGENES MOSTRADAS SON PROPIEDAD DE SUS -->
+    <!--RESPECTIVOS AUTORES, SE AGRADECE LA AUTORIZACIÓN DEL USO DE LAS MISMAS. TODOS LOS   -->
+    <!--DATOS MOSTRADOS SE HAN HECHO CON LA INTENCIÓN DE CORRESPONDER CON LA REALIDAD, PERO -->
+    <!-- SIN DAR GARANTÍAS DE LA INFORMACIÓN PROVISTA. LA PÁGINA SE HA MAQUETADO EN INGLÉS. -->
+    <!--                     DEDICADO A UNO DE MIS CANTANTES FAVORITOS.                     -->
+    <!--DISEÑADO POR DAVID MARTOS RUIZ, A FECHA DE 9 DE DICIEMBRE DE 2022.                  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavio Fernández</title>
+    <!-- enlace con favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> <!-- POR HACER -->
+    <!-- enlace con hoja de estilos -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- enlace para Font Awesome 4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav id="navfixedposition">
+            <div class="topnav" id="myTopnav">
+                <!-- barra de navegación -->
+                <a style="float:left" class="active" href="#" id="topnav-tittle">Flavio Fernández</a>
+                <a href="#music">Music</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#events">Events</a>
+                <a href="#releases">Releases</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+
+        <section id="hero">
+            <div class="parallax"> <!-- hero section con efecto parallax -->
+            <div id="bajate">
+                <h2>Flavio Fernández</h2>
+                <p id="cuadro">Singer, composer and artist from Murcia, Spain.<br>Second finalist of Operación Triunfo 2020.</p>
+                <a href="#about"><p id="cta">About Flavio</p></a>
+                <a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+            </div>
+        </section>
+
+    <div id="container">
+
+        <section id="about"> <!-- about us con lista (ul) para explicar por qué elegirnos-->
+            <div class="mitad-aboutus" id="izquierda">
+                <img id="aboutus-photo" src="./images/about.jpg" alt="Flavio's concert in Valencia">
+            </div>
+            <div class="mitad-aboutus" id="derecha">
+                <h1>Who is Flavio?</h1>
+                <p>
+                    Flavio Fernández was born in Murcia on 30th of June 2000. He is the son of the famous Spanish singer, Flavio Augusto Fernández Nicolás. He is known for being part of the Spanish version of the reality show "Operación Triunfo".
+                </p>
+                <h3>Musical career</h3>
+                <div id="why-choose-us-list">
+                    <ul>
+                        <li>He started playing the piano at the age of 8.</li>
+                        <li>At the age of 18 he began self-taught to play the guitar and the trumpet.</li>
+                        <li>Two years ago when he decided to make himself known by uploading covers to the network and composing his own songs.</li>
+                        <li>In 2019 he entered the Operación Triunfo academy becoming the second finalist of the program.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mitad-aboutus" id="img-formato-tablet">
+                <img id="aboutus-photo" src="./images/about.jpg" alt="Flavio's concert in Valencia"> <!-- imagen para móviles y tablets -->
+                <div class="fin-float"></div>
+            </div>
+            <div class="fin-float"></div>
+            
+        </section>
+
+        <section id="releases">
+            <h1>Releases</h1>
+            <!-- sección de servicios, con card que al poner el cursor por encima te detalla el servicio -->
+            <div class="cuartos">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="album-cover" src="./images/disco-flavio.jpg" alt="Album cover">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Flavio</h2>
+                        <p>His latest album, named after him.</p>
+                    </div>
+                    </div>
+                </div> 
+                
+            </div>
+            <div class="cuartos">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="album-cover" src="./images/disco-flavio-sus-canciones.jpg" alt="Album cover">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Flavio, sus canciones</h2>
+                        <p>Compilation album of songs on his way through Operación Triunfo.</p>
+                    </div>
+                    </div>
+                </div> 
+                
+            </div>
+            <div class="cuartos">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="album-cover" src="./images/libro-flavio.jpg" alt="Album cover">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Yo con yo mismo</h2>
+                        <p>First book published and written by Flavio.</p>
+                    </div>
+                    </div>
+                </div> 
+        
+            </div>
+            <div class="cuartos">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="album-cover" src="./images/cancion-sobran-las-palabras.jpg" alt="Album cover">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Sobran las palabras</h2>
+                        <p>This was one of the most popular singles he has released.</p>
+                    </div>
+                    </div>
+                </div> 
+                
+            </div>
+        </section>
+    <div class="fin-float"></div>
+
+    <!--Events section (this section will have one single picture at the left and a dropdown at the right)-->
+    
+    <section id="events">
+        <h1>Upcoming events</h1>
+        <div class="mitad-aboutus" id="izquierda">
+            <img id="events-photo" src="./images/concert-cover.jpg" alt="Flavio's concert in Valencia">
+        </div>
+        <div class="mitad-aboutus" id="derecha">
+            <!-- The grid: three columns -->
+            <div class="row">
+                <div class="column" onclick="openTab('b1');">Sevilla</div>
+                <div class="column" onclick="openTab('b2');">Málaga</div>
+                <div class="column" onclick="openTab('b3');">València</div>
+            </div>
+            
+            <!-- The expanding grid (hidden by default) -->
+            <div id="b1" class="containerTab">
+                <!-- If you want the ability to close the container, add a close button -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2>Sevilla</h2>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> Friday February 24</p>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; La Sala</p>
+            </div>
+            
+            <div id="b2" class="containerTab">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2>Málaga</h2>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> Saturday February 25</p>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; La Cochera Cabaret</p>
+            </div>
+            
+            <div id="b3" class="containerTab">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2>València</h2>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> Saturday March 11</p>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; La Salà</p>
+            </div> 
+        </div>
+    </section>
+
+
+    <div class="fin-float"></div>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+                <!-- galería de proyectos, la parte más complicada fue el javascript para hacer que se aumentaran de tamaño al pulsar -->
+            <div class="row">
+                <div class="column">
+                    
+                    <div class="container1">
+                        <img src="./images/gallery/col1-fil1.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    <div class="container1">
+                        <img src="./images/gallery/col1-fil2.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    <div class="container1">
+                        <img src="./images/gallery/col1-fil3.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    
+
+                    <div id="modal01" class="modal" onclick="this.style.display='none'"> <!-- cruzeta para cerrar imagen en grande -->
+                        <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="modal-content">
+                        <img id="img01" style="max-width:100%">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <div class="container1">
+                    <img src="./images/gallery/col2-fil1.jpg" style="max-width:100%;cursor:pointer"
+                    onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    <div class="container1">
+                        <img src="./images/gallery/col2-fil2.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    <div class="container1">
+                        <img src="./images/gallery/col2-fil3.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container1">
+                        <img src="./images/gallery/col3-fil1.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    <div class="container1">
+                        <img src="./images/gallery/col3-fil2.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    <div class="container1">
+                        <img src="./images/gallery/col3-fil3.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    
+                </div>
+                <div class="column">
+                    <div class="container1">
+                        <img src="./images/gallery/col4-fil1.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    <div class="container1">
+                        <img src="./images/gallery/col4-fil2.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                    <div class="container1">
+                        <img src="./images/gallery/col4-fil3.jpg" style="max-width:100%;cursor:pointer"
+                        onclick="onClick(this)" class="modal-hover-opacity">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="music">
+            <h1>Music</h1> <!-- testimonios de clientes -->
+            <div class="mitad-aboutus" id="izquierda">
+                <iframe src="https://open.spotify.com/embed/playlist/2kX5EgAcJdh0B3fxRnr2cR" allowtransparency="true" allow="encrypted-media" width="300" height="160" frameborder="0"></iframe>
+            </div>
+            <div class="mitad-aboutus" id="derecha">
+                <div id="music-text">
+                    <h2>Listen to his music</h1>
+                    <p>Explore and listen to Flavio's official playlist on Spotify, his music will captivate you from the first moment.</p>
+                </div>
+            </div>
+            <div class="fin-float"></div>
+        </section>
+
+        </div>
+
+        <footer> <!-- footer con créditos, copyright y redes sociales -->
+            <p>Design: &#169 2022 David Martos Ruiz. <br>Images: <a href="images-notice/index.html">read notice.</a></p>
+            <p>Thanks Flavio, for making my afternoons more enjoyable.</p>
+            <hr>
+            <h6>Social networks</h6>
+            <div id="social">
+                <a href="https://www.facebook.com/flavio.fdzmusic/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/flaviofdzz" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UC_oP9EI_H0Fz5mborGXBAiQ" target="_blank" class="fa fa-youtube-play"></a>
+                <a href="https://www.instagram.com/flavio.oficial/" target="_blank" class="fa fa-instagram"></a>
+            </div>
+        </footer>
+    </div>
+    <!-- enlace con hoja de javascript -->
+    <script src="./javascript/javascript.js"></script>
+</body>
+</html>

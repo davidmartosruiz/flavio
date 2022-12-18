@@ -1,0 +1,661 @@
+/** HOJA DE ESTILO DEL SITIO WEB DE FLAVIO FERNÁNDEZ **/
+
+/*******************  COLOUR PALETTE *******************
+#f3e9d2
+#f3f2f2
+#008cba
+#ecddba
+#114b5f
+
+/******************* ESTILO GENERAL *******************/
+@font-face {
+    font-family: text;
+    src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: tittle;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: tittle-bold;
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+body {background-color: #F3E9D2;
+    margin: 0;
+    padding: 0;}
+
+#container {
+    width: 80%;
+    margin: auto;}
+
+html {scroll-behavior: smooth;}
+
+h1 {    font-family: tittle-bold;
+        position: relative;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+        margin: 2%;
+}
+h1::after {
+        position: absolute;
+        content: "";
+        background-color: #008CBA;
+        height: 3px;
+        width: 50px;
+        bottom: -1px;
+        left: 0;
+}
+
+* {font-family: text;}
+
+
+/******************* ESTILO DEL NAV *******************/
+ /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #f3f3f3;
+    font-family: tittle;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+#navfixedposition {position: sticky; /* esto sirve para fijar la barra de nav arriba. */
+                top: 0;
+                z-index: 9999;
+                opacity: 0.98;}
+
+
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: #008CBA;
+}
+
+  /* Add an active class to highlight the current page */
+
+/*.topnav a.active {
+    background-color: #008CBA;
+    color: white;
+}*/
+
+  /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+
+@media screen and (max-width: 680px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+    #topnav-tittle {display: none;}
+}
+
+@media screen and (max-width: 680px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+}
+
+/******************* ESTILO DE HERO SECTION *******************/
+#hero {/*background-image: url("../images/hero-section-img.jpg");*/
+        background-size: cover;
+        position: relative;
+        background-position: 50%;
+        height: 100vh;
+        top: 0px;
+        z-index: 10000;}
+
+#hero h2 {position: absolute;
+    top: 0px;
+    left: 40px;
+    font-family: tittle;
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 4px 4px 5px #114B5F;
+    margin-right: 10px;}
+
+
+
+#hero .fa-arrow-up {position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* hasta aquí para posicionarlo */
+    color: #90cde1;
+    font-size: 1.5em;
+    border: 2px solid #90cde1;
+    padding: 4px;
+    border-radius: 50%;}
+
+#hero .fa-arrow-up:hover {color: #008CBA;
+    border: 2px solid #008CBA;}
+
+
+#hero #cta {position: absolute;
+    background-color: #008CBA;
+    padding: 11px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+#hero #cta:hover {background-color: #bfceda;
+    box-shadow: 3px 3px 3px rgb(68, 68, 68);
+    color: black;}
+
+#hero a {color:black;} /* Esto evita que se ponga de color azul por defecto el vínculo */
+
+#hero #bajate #cuadro {
+    position: absolute;
+	color: #fff;
+	font-size: 17px;
+	line-height: 28px;
+	padding: 15px;
+	max-width: 600px;
+	margin: 0 auto;
+	bottom: 15%;
+	background: rgba(0,0,0,.45);
+    box-sizing: border-box;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+#hero {
+	text-align: center;
+    justify-self: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+}
+#hero #bajate {padding-top: 550px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/hero-section-img.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+/******************* ABOUT SECTION *******************/
+#about {
+    padding: 5%;
+    font-family: text;
+    font-size: 1.1em;
+    text-align: justify;
+    padding-bottom: 0;
+}
+
+
+#about h2 {font-family: tittle-bold;
+    font-size: 1.6em;
+    text-align: center;}
+
+#about h3 {font-family: tittle;}
+
+
+#aboutus-photo {width: 75%;
+float: right;
+margin: 30px;}
+
+.mitad, .mitad-aboutus {width: 50%; /* esto limita el ancho al 50% */
+    float: left; /* esto hace que se monten en paralelo */
+    box-sizing: border-box; /* obligatorio para poder usar padding o margin en columnas*/
+}
+
+#izquierda {padding: 2%;}
+
+#derecha {margin-top: 30px}
+
+#why-choose-us-list {text-align: left;
+                    margin-top: 0;
+                    font-size: 0.9em;}
+
+#photo-atribution {font-size: 0.6em;
+                    text-align: center;}
+
+.fin-float {clear: both;}
+
+#img-formato-tablet{display: none;}
+
+/******************* RELEASES SECTION *******************/
+#releases {margin-bottom: 300px;
+            padding-top: 5%;}
+
+.cuartos {width: 23%;
+    float: left;
+    box-sizing: border-box;
+    padding: 1%; /* para que las imágenes no estén pegadas entre sí */
+    border: 1px solid #978c45;
+    margin: 1%;
+}
+
+
+.cuartos i {width: 100%; /* para que las imágenes no se monten encimas de otras */
+    font-size: 6em;
+    opacity: 1;
+    text-align: center;
+    color:#114B5F;
+}
+
+
+         /* The flip card container  */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 235px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    font-size: 0.95em;
+  }
+  .flip-card-inner p {
+    padding: 0 5% 5% 5%;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #ecddba;
+    color: black;
+    transform: rotateY(180deg);
+    
+  } 
+
+.album-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.5s ease;
+}
+
+/******************* EVENTS SECTION *******************/
+#events {margin-bottom: 200px;
+    padding-top: 5%;}
+#events h2 {font-family: tittle-bold;
+    font-size: 1.6em;
+    text-align: center;}
+
+#events-photo {width: 75%;
+    float: right;
+    margin: 30px;}
+
+ /* The grid: Three equal columns that floats next to each other */
+#events .column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+  }
+
+  #events .column:hover {
+    background-color: #ecddba;
+  }
+  
+#events .containerTab {
+    padding: 20px;
+    color: black;
+    background-color: #ecddba;
+    display: none;
+  }
+  
+  /* Clear floats after the columns */
+#events .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the image */
+#events .closebtn {
+    float: right;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+  } 
+
+/******************* PROJECTS SECTION *******************/
+#gallery {background-color: #ecddba;
+            padding-bottom: 15px;}
+
+#gallery h2 {font-family: tittle-bold;
+            padding: 1%;
+            padding-top: 6%;
+            text-align: center;
+            font-size: 1.6em;}
+
+/*#projects img {opacity: 0.9;}
+
+#projects img:hover {opacity: 1;}*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 0.5%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1100px) {
+    .column {
+    flex: 49%;
+    max-width: 49%;
+    }
+}
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 660px) {
+    .column {
+    flex: 100%;
+    max-width: 100%;
+    }
+}
+
+
+/* ZOOM MODE */
+
+.modal {
+    z-index:1;
+    display:none;
+    padding-top:10px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.8)
+    }
+    
+    .modal-content{
+    margin: auto;
+    display: block;
+        position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    
+    .modal-hover-opacity {
+    opacity:1;
+    filter:alpha(opacity=100);
+    
+    }
+    
+    .modal-hover-opacity:hover {
+    opacity:0.60;
+    filter:alpha(opacity=60);
+    
+    }
+    
+    
+    .close {
+    text-decoration:none;
+    float:right;
+    font-size:24px;
+    font-weight:bold;
+    color:white
+    }
+    .container1 {
+    display:inline-block;
+    }
+
+
+    .modal-content, #caption {   
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+    
+
+
+
+
+/******************* TESTIMONIALS SECTION *******************/
+#music {padding-top: 50px;
+}
+
+.testimonial-content{padding: 0 50px 0 50px;}
+
+.testimonial-content p {
+	margin-bottom: 0;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.testimonial-content h5 {
+	margin-top: 10px;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.tercio {width: 33.33%; /* esto limita el ancho al 50% */
+    float: left; /* esto hace que se monten en paralelo */
+    box-sizing: border-box; /* obligatorio para poder usar padding o margin en columnas*/
+}
+
+#music #izquierda {padding-left: 15%;
+}
+
+/******************* FOOTER *******************/
+
+footer {background-color: #114B5F;
+    padding: 1% 30%;
+    font-family: text;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    margin-top: 0%;}
+
+footer hr {margin-top: 30px;
+        color: white;}
+
+footer h6 {text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.8em;
+    margin-bottom: 1%;
+    }
+
+footer a {
+    color: white;
+    text-decoration: none;
+    }
+
+footer .fa {
+padding: 20px;
+font-size: 30px;
+width: 90px;
+text-decoration: none;
+margin: 5px 2px;
+box-sizing: border-box;
+}
+
+footer .fa:hover {
+opacity: 0.7;
+}
+
+#social {text-align: center;
+margin: auto;
+}
+
+/******************* LEGAL NOTICE *******************/
+
+#legal-cta {position: absolute;
+    background-color: #008CBA;
+    padding: 11px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin-left: 40px;
+    margin-top: 2%;
+}
+
+#legal {
+    padding: 5%;
+    font-family: text;
+    text-align: justify;
+    padding-bottom: 0;
+}
+
+/******************* MEDIA QUERIES *******************/
+
+@media only screen and (max-width:1100px) {
+    .cuartos {width: 48%;}
+    .parallax {background-attachment: scroll;}
+    #about #aboutus-photo {width: 90%;
+        float: right;
+        margin-top: 30px;}
+    .mitad-aboutus{width: 100%;}
+    #img-formato-tablet{display: block;}
+    #about #izquierda {display: none;}
+    #container {width: 90%;}
+    #gallery h2 {padding-top: 7%;}
+    .testimonial-content{padding: 0 20px 0 20px;}
+    #aboutus-photo {width: 40%;
+        margin: auto;
+        margin-top: 50px;
+        display: block;
+        float:initial
+        }
+    #contact img {width: 40%;}
+    footer {padding: 1% 15%;}
+    .container {padding-top: 90%;}
+    #contact p, #contact h2, #contact h3, #contact h1 {padding-left: 10%;}
+    #music #izquierda {padding-left: 5px;}
+    #music-text {
+        margin-left: 10%;
+    }
+    #music #derecha {
+        margin-top:0
+    }
+    #aboutus-photo {float: left}
+    #events-photo {margin-left: 13%;
+                    float: left}
+}
+
+@media only screen and (max-width:660px) {
+    .cuartos {width: 90%; /* para que solo quepa una card */
+        margin: 5%;} /* para que quede en medio */
+    #container {width: 100%;}
+    .tercio{width: 100%;}
+    #aboutus-photo {width: 80%;}
+    #contact p, #contact h2, #contact h3, #contact h1 {padding-left: 25%;}
+    #contact img {width: 60%;}
+    footer {padding: 1% 7%;}
+    .mitad {width: 100%;}
+    .container {width: 95%; padding-top: 50%;}
+    #PC{display:none;}
+    #mobile{display:block;}
+    #subirdiv div{margin-top: -30px;}
+    #datoscontacto{margin: 0 0 0 -10px}
+    #about #aboutus-photo {
+        float: inherit;
+        margin-left: 4%;
+    }
+    #music #izquierda {padding-left: 18%;}
+    #music #derecha {padding: 0% 5% 10% 0%;}
+    footer .fa {margin: 5px 1px;}
+}
