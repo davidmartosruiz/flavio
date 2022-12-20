@@ -560,7 +560,7 @@ footer a {
     }
 
 footer .fa {
-padding: 20px;
+padding: 20px 0 20px 0;
 font-size: 30px;
 width: 90px;
 text-decoration: none;
@@ -573,7 +573,11 @@ opacity: 0.7;
 }
 
 #social {text-align: center;
-margin: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
 }
 
 /******************* LEGAL NOTICE *******************/
